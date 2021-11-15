@@ -1,0 +1,35 @@
+.card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgb(218, 214, 214);
+  width: 16%;
+  height: fit-content;
+  padding: 1%;
+  padding-bottom: 1%;
+  /* margin-left: 3%; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* border: 3px solid blue; */
+}
+
+.weekDay {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 18px;
+  font-weight: bolder;
+
+  height: fit-content;
+  /* border: 1px solid red; */
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  /* border: 1px solid green; */
+}
+.cardData {
+  font-size: 18px;
+  font-weight: bolder;
+}

@@ -1,0 +1,56 @@
+.tituloHeader {
+  color: rgb(43, 130, 116);
+  margin-left: 25px;
+  /* margin-top: 40px; */
+  /* border: 2px solid blue; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(248, 248, 248);
+  height: 150px;
+  align-items: center;
+  /* border: 2px solid green; */
+}
+
+.headerButtonsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* gap: 2%; */
+  width: 60%;
+  /* border: 1px solid red; */
+  margin-right: 2%;
+  /* padding-right: 2%; */
+}
+
+.headerButtonsContainer button {
+  background-color: white;
+  border: none;
+  color: teal;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+  margin-right: 2%;
+  font-size: 16px;
+  font-weight: bold;
+  /* margin-left: 2%; */
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 1px 2px 1px rgb(218, 214, 214);
+}
+
+.headerButtonsContainer select {
+  color: teal;
+  text-decoration: none;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding-right: 15%;
+}

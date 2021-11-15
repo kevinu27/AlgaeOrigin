@@ -1,0 +1,52 @@
+.logo img {
+  width: 165px;
+  margin-right: 30px;
+  /* margin-top: 30px; */
+}
+
+.menuButtons {
+  display: flex;
+  flex-direction: column;
+}
+.menuButtons button {
+  border: none;
+  background-color: rgb(190, 233, 226);
+  text-align: left;
+}
+
+.menuButtons button p {
+  margin-left: 10px;
+}
+
+.menuButtons select {
+  font-size: 18px;
+  padding: 15px;
+  margin-right: 20px;
+  font-weight: bold;
+  background-color: rgb(43, 130, 116);
+  align-self: left;
+  width: 100%;
+  border: none;
+  color: white;
+}
+
+.menuButtons option {
+  font-size: 18px;
+  padding: 20px;
+
+  font-weight: bold;
+  background-color: rgb(43, 130, 116);
+  align-self: left;
+  width: 100%;
+  border: none;
+  color: white;
+  gap: 10px;
+}
+
+.navFont {
+  font-size: 18px;
+  color: rgb(17, 50, 44);
+}
+a {
+  text-decoration: none;
+}
