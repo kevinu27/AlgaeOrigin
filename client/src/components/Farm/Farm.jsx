@@ -59,15 +59,53 @@ export function Farm(props) {
             </button>
           </div>
         </div>
-
         {/* aqui acabará este componente */}
-
         <div className="variables mt-4 pl-5 ">
           <h3 className="variablesTitle">Variables</h3>
           <div className="panelVariables mt-5">
-            <div className="titles">
-              <p className="temperatureTitle"> Temperatura: {temp} ºC</p>
-              <p className="temperatureTitle"> Turbidez: {temp} ppm</p>
+            {/* //// */}
+            <div className="actionHarvest">
+              <div className="titlesAction">
+                <div className="columnaActionHarvest">
+                  <p className="actionHarvestTitle"> Acciones</p>
+                  <button className="actionButton">
+                    Nivel de nutrientes bajo
+                  </button>
+                </div>
+                <div className="columnaActionHarvest2">
+                  <p className="actionHarvestTitle"> Siguiente cosecha</p>
+                  <div className="top">
+                    <div className="progressBarContainerAction mt-4 mb-4">
+                      <div className="progressBar"></div>
+                    </div>
+                    <div className="percentage mt-3 ">
+                      {" "}
+                      <p>40%</p>{" "}
+                    </div>
+                  </div>{" "}
+                  <div className="harvestValue">
+                    <p>
+                      {" "}
+                      Cantidad aprox.:{" "}
+                      <span className="harvestValueBold"> 4,2 - 5,5kg</span>
+                    </p>
+                  </div>
+                  <div className="harvestValue">
+                    <p>
+                      {" "}
+                      Quedan: <span className="harvestValueBold"> 9 horas</span>
+                    </p>
+                  </div>
+                  <div className="harvestButtonDiv">
+                    <button className="harvestButton"> Recoger</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* //// */}
+            <div className="titles2">
+              <p className="temperatureTitle"> Ph de agua</p>
+              <p className="temperatureTitle3"> Densidad</p>
             </div>
             {/* <div className="gaugeMe ml-5"> */}
             {/* <div class="container2">
@@ -84,8 +122,133 @@ export function Farm(props) {
                 </div>
                 <div className="blanco"></div>
               </div>{" "} */}
-
             <div className="rowMeter">
+              <div>
+                <div id="logo">
+                  {" "}
+                  <span class="speedometer"></span>
+                  <span
+                    class="needle"
+                    style={{
+                      transform: `rotate($
+                      {tempMapped}deg)`,
+                    }}
+                  ></span>
+                  <span className="blanco2">
+                    {" "}
+                    <p> Actual: </p>
+                    <button className="seeMore">Ver más</button>
+                  </span>
+                </div>
+              </div>
+
+              <div>
+                <div id="logo">
+                  {" "}
+                  <span class="speedometer"></span>
+                  <span class="needle"></span>
+                  <span className="blanco2">
+                    {" "}
+                    <p> Actual: </p>
+                    <button className="seeMore">Ver más</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            {/* </div>{" "} */}
+            {/* ///////////////// */}
+            <div className="titles3">
+              <p className="temperatureTitle4"> Conductividad</p>
+            </div>
+            <div className="rowMeter">
+              <div>
+                <div id="logo">
+                  {" "}
+                  <span class="speedometer"></span>
+                  <span
+                    class="needle"
+                    style={{
+                      transform: `rotate($
+                      {tempMapped}deg)`,
+                    }}
+                  ></span>
+                  <span className="blanco2">
+                    {" "}
+                    <p> Actual: </p>
+                    <button className="seeMore">Ver más</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* </div>{" "} */}
+            {/* //////////// */}
+            <div className="inputDataDiv">
+              <h3>Datos a introducir por cosecha:</h3>
+
+              <div className="mainInputsDiv">
+                <p>Litros cosechados</p>
+
+                <input type="text" />
+              </div>
+
+              <div className="mainInputsDiv">
+                <p>Kgs biomasa seca obtenida</p>
+
+                <input type="text" />
+              </div>
+
+              <div className="mainInputsDiv">
+                <p>Fecha y hora de la cosecha</p>
+
+                <input type="datetime-local" />
+              </div>
+
+              <button className="saveHarvestingData"> Guardar cosecha</button>
+            </div>
+            <div className="nutrientInputData">
+              <div className="inputDataDiv2">
+                <h3>Consumo de nutrientes</h3>
+
+                <div className="mainInputsDiv">
+                  <p>Litros cosechados</p>
+
+                  <input type="text" />
+                </div>
+
+                <div className="mainInputsDiv">
+                  <p>Kgs biomasa seca obtenida</p>
+
+                  <input type="text" />
+                </div>
+
+                <div className="mainInputsDiv">
+                  <p>Fecha y hora de la cosecha</p>
+
+                  <input type="datetime-local" />
+                </div>
+
+                <button className="saveHarvestingData">
+                  {" "}
+                  Guardar datos nutrientes
+                </button>
+              </div>
+
+              <div className="lateralButtonsDiv">
+                <div className="lateralButton"></div>
+                <div className="lateralButton">+</div>
+                <div className="lateralButton">-</div>
+              </div>
+            </div>
+            {/* </div>{" "} */}
+            {/* //////////// */}
+
+            {/* </div>{" "} */}
+            {/* //////////// */}
+            {/* <div className="titles">
+              <p className="temperatureTitle"> Temperatura</p>
+            </div>
+            <div className="rowMeter2">
               <div>
                 <div id="logo">
                   {" "}
@@ -100,17 +263,8 @@ export function Farm(props) {
                   <span className="blanco2"></span>
                 </div>
               </div>
-
-              <div>
-                <div id="logo">
-                  {" "}
-                  <span class="speedometer"></span>
-                  <span class="needle"></span>
-                  <span className="blanco2"></span>
-                </div>
-              </div>
-            </div>
-            {/* </div>{" "} */}
+            </div> */}
+            {/* /////// */}
           </div>{" "}
         </div>
       </div>

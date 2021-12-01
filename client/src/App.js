@@ -6,6 +6,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import Axios from "axios";
 import { Forecast } from "./pages/Forecast/Forecast";
 import { IncomeExpenses } from "./pages/IncomesExpenses/IncomesExpenses";
+import { Production } from "./pages/Production/Production";
+import { MainDashboard } from "./pages/MainDasboard/MainDashboard";
 
 import React from "react";
 
@@ -20,9 +22,11 @@ function App() {
       </div>
       <div className="contenido">
         <Switch>
+          <Route exact path="/" component={MainDashboard} />
           <Route path="/CondicionesClimaticas" component={Forecast} />
-          <Route exact path="/" component={Farm} />
+          <Route exact path="/Granjas" component={Farm} />
           <Route exact path="/ingresosGastos" component={IncomeExpenses} />
+          <Route exact path="/produccion" component={Production} />
         </Switch>
       </div>
     </div>

@@ -27,7 +27,7 @@ app.get("/api/get", (req, res) => {
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/api/insert", (req, res) => {
-  const sqlInsert = "INSERT INTO sensors (temperature) VALUES ('30')";
+  const sqlInsert = "INSERT INTO sensors (temperature) VALUES ('15')";
   db.query(sqlInsert, (err, result) => {
     console.log(err);
     res.send("Hello World");
