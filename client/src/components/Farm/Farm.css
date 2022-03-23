@@ -43,7 +43,7 @@
   height: 900px;
   display: flex;
   flex-direction: column;
-  border: solid red;
+  /* border: solid red; */
 }
 
 .panelVariables {
@@ -53,7 +53,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 4px solid green;
+  /* border: 4px solid green; */
   padding-top: 5%;
   overflow-y: scroll;
 }
@@ -282,14 +282,14 @@
   display: flex;
   justify-content: space-around;
   /* border: 3px solid blue; */
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
 }
 
 .rowMeter2 {
   display: flex;
   justify-content: flex-start;
   /* border: 3px solid blue; */
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
   margin-left: 70px;
 }
 
@@ -306,7 +306,7 @@
   justify-content: space-between;
   padding-left: 15%;
   padding-right: 15%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .titles3 {
@@ -314,7 +314,7 @@
   justify-content: center;
   padding-left: 15%;
   padding-right: 15%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .actionHarvestTitle {
@@ -442,7 +442,7 @@
 .inputDataDiv {
   width: 85%;
   align-self: center;
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -451,7 +451,7 @@
 .inputDataDiv2 {
   width: 90%;
   align-self: center;
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -482,13 +482,13 @@
   display: flex;
   /* justify-content: space-between; */
   width: 100%;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .lateralButtonsDiv {
   display: flex;
   flex-direction: column;
-  border: 5px solid red;
+  /* border: 5px solid red; */
   width: 10%;
   justify-content: center;
   gap: 10%;
